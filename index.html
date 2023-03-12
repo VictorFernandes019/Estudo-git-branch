@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Minha Agência de Viagens</title>
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<!-- Adicione o link para o arquivo Slick CSS no cabeçalho -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+
+	<!-- Adicione o link para o arquivo jQuery no cabeçalho -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- Adicione o link para o arquivo Slick JS no final do body -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.slick-carousel').slick({
+		autoplay: true,
+		autoplaySpeed: 3000,
+		dots: true,
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+		nextArrow: '<button type="button" class="slick-next">Next</button>',
+		responsive: [
+			{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+			},
+			{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+			}
+			}
+		]
+		});
+	});
+
+</script>
+
+</head>
+<body>
+	<header>
+		<h1>Minha Agência de Viagens</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Destinos</a></li>
+				<li><a href="#">Pacotes</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Destinos Populares</h2>
+			<div class="slick-carousel">
+			  <div>
+				<img src="paris.jpg" alt="Paris">
+				<h3>Paris, França</h3>
+				<p>Paris é uma cidade encantadora, famosa por sua arquitetura, gastronomia e cultura.</p>
+				<a href="#">Saiba mais</a>
+			  </div>
+			  <div>
+				<img src="new-york.jpg" alt="Nova York">
+				<h3>Nova York, Estados Unidos</h3>
+				<p>Nova York é uma cidade vibrante e cosmopolita, com muitas opções de entretenimento e lazer.</p>
+				<a href="#">Saiba mais</a>
+			  </div>
+			  <div>
+				<img src="tokyo.jpg" alt="Tóquio">
+				<h3>Tóquio, Japão</h3>
+				<p>Tóquio é uma cidade fascinante, com uma rica cultura e muitas opções de compras e gastronomia.</p>
+				<a href="#">Saiba mais</a>
+			  </div>
+			  <div>
+				<img src="london.jpg" alt="Londres">
+				<h3>Londres, Reino Unido</h3>
+				<p>Londres é uma cidade histórica e sofisticada, com muitas atrações turísticas e opções de compras.</p>
+				<a href="#">Saiba mais</a>
+			  </div>
+			  <div>
+				<img src="barcelona.jpg" alt="Barcelona">
+				<h3>Barcelona, Espanha</h3>
+				<p>Barcelona é uma cidade vibrante e colorida, com muitas atrações turísticas e uma rica cultura catalã.</p>
+				<a href="#">Saiba mais</a>
+			  </div>
+			  <div>
+				<img src="rome.jpg" alt="Roma">
+				<h3>Roma, Itália</h3>
+				<p>Roma é uma cidade histórica e romântica, famosa por sua arquitetura, gastronomia e cultura.</p>
+				<a href="#">Saiba mais</a>
+			  </div>
+			</div>
+		  </section>
+		<section class="pacotes">
+			<h2>Pacotes Nacionais</h2>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="pacote1.jpg" alt="Pacote 1">
+						<h3>Pacote Para Rio de Janeiro</h3>
+						<p>Saindo de São Paulo <br> Hotel + Aéreo</p>
+						<span class="preco">R$ 422</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="pacote2.jpg" alt="Pacote 2">
+						<h3>Pacote para Maceió</h3>
+						<p>Saindo de São Paulo <br> Hotel + Aéreo</p>
+						<span class="preco">R$ 1.283</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="pacote3.jpg" alt="Pacote 3">
+						<h3>Pacote para Porto Seguro</h3>
+						<p>Saindo de São Paulo <br> Hotel + Aéreo</p>
+						<span class="preco">R$ 1.009</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="pacote3.jpg" alt="Pacote 3">
+						<h3>Pacote para Natal</h3>
+						<p>Saindo de São Paulo <br> Hotel + Aéreo</p>
+						<span class="preco">R$ 978</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="pacotes">
+			<h2>Pacotes Internacionais</h2>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="pacote1.jpg" alt="Pacote 1">
+						<h3>Pacote para Santiago, Chile</h3>
+						<p>Saindo de São Paulo <br> Hotel + Aéreo</p>
+						<span class="preco">R$ 422</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="pacote2.jpg" alt="Pacote 2">
+						<h3>Pacote para Buenos Aires, Argentina</h3>
+						<p>Saindo de São Paulo <br> Hotel + Aéreo</p>
+						<span class="preco">R$ 1.283</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="pacote3.jpg" alt="Pacote 3">
+						<h3>Pacote para Orlando, USA</h3>
+						<p>Saindo de São Paulo <br> Hotel + Aéreo</p>
+						<span class="preco">R$ 1.009</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="pacote3.jpg" alt="Pacote 3">
+						<h3>Pacote para Punta Cana, República Dominicana</h3>
+						<p>Saindo de São Paulo <br> Hotel + Aéreo</p>
+						<span class="preco">R$ 978</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Minha Agência de Viagens. Todos os direitos reservados.</p>
+	</footer>
+</body>
+</html>
